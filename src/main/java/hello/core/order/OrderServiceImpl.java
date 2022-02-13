@@ -17,7 +17,7 @@ public class OrderServiceImpl implements OrderService{
     // 의존 관계가 확실하게
     private final DiscountPolicy discountPolicy;
 
-    @Autowired
+    @Autowired // 생성자가 하나일 경우 생략 가능
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;

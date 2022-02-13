@@ -3,7 +3,7 @@ package hello.core.member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component("memberService") // 빈이름 변경 가능
+@Component("memberServiceImpl") // 빈이름 변경 가능
 public class MemberServiceImpl implements MemberService {
 
 
